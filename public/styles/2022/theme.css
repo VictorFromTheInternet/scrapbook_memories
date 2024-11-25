@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap'); /*font-family: 'DotGothic16', sans-serif;*/
 @font-face{
   font-family: 'Gothic-Pixels';
-  src: url('../fonts/GothicPixels.ttf') format('truetype');
+  src: url('../../assets/2022/fonts/GothicPixels.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Pixel-Play';
-  src: url('../fonts/pixelplay.ttf') format('truetype');
+  src: url('../../assets/2022/fonts/pixelplay.ttf') format('truetype');
 }
 @font-face{
   font-family: 'Gothic-Pixels-2';
-  src: url('../fonts/gothic_pixel.ttf') format('truetype');
+  src: url('../../assets/2022/fonts/gothic_pixel.ttf') format('truetype');
 }
 
 :root{

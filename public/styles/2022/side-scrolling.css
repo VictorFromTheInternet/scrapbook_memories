@@ -10,18 +10,18 @@
   background-color: var(--background-color);
   
   background-image: /*url('../Background layers/Background.png')*/
-                    url("../Background layers/Layer_0000_9.png"),
-                    url("../Background layers/Layer_0001_8.png"),
-                    url("../Background layers/Layer_0002_7.png"),
-                    url("../Background layers/Layer_0003_6.png"),
-                    url("../Background layers/Layer_0004_Lights.png"),
-                    url("../Background layers/Layer_0005_5.png"),
-                    url("../Background layers/Layer_0006_4.png"),
-                    url("../Background layers/Layer_0007_Lights.png"),
-                    url("../Background layers/Layer_0008_3.png"),
-                    url("../Background layers/Layer_0009_2.png"),
-                    url("../Background layers/Layer_0010_1.png"),
-                    url("../Background layers/Layer_0011_0.png");
+                    url("../../assets/2022/Background layers/Layer_0000_9.png"),
+                    url("../../assets/2022/Background layers/Layer_0001_8.png"),
+                    url("../../assets/2022/Background layers/Layer_0002_7.png"),
+                    url("../../assets/2022/Background layers/Layer_0003_6.png"),
+                    url("../../assets/2022/Background layers/Layer_0004_Lights.png"),
+                    url("../../assets/2022/Background layers/Layer_0005_5.png"),
+                    url("../../assets/2022/Background layers/Layer_0006_4.png"),
+                    url("../../assets/2022/Background layers/Layer_0007_Lights.png"),
+                    url("../../assets/2022/Background layers/Layer_0008_3.png"),
+                    url("../../assets/2022/Background layers/Layer_0009_2.png"),
+                    url("../../assets/2022/Background layers/Layer_0010_1.png"),
+                    url("../../assets/2022/Background layers/Layer_0011_0.png");
   background-size: contain;
   background-repeat: repeat-x;
   background-position: 0px -10vh;

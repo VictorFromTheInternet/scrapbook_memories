@@ -35,10 +35,10 @@ const zoeSprite = new Image();
 const victorSprite = new Image();
 const chloeSprite = new Image();
 const chrisSprite = new Image();
-zoeSprite.src = '../sprite-sheets/zoe-sprite-sheet.png';
-victorSprite.src = '../sprite-sheets/victor-peasant-sprite.png';
-chloeSprite.src = '../sprite-sheets/chloe-sprite-sheet.png';
-chrisSprite.src = '../sprite-sheets/chris-sprite-sheet.png';
+zoeSprite.src = '../../assets/2022/sprite-sheets/zoe-sprite-sheet.png';
+victorSprite.src = '../../assets/2022/sprite-sheets/victor-peasant-sprite.png';
+chloeSprite.src = '../../assets/2022/sprite-sheets/chloe-sprite-sheet.png';
+chrisSprite.src = '../../assets/2022/sprite-sheets/chris-sprite-sheet.png';
 
 let sx=0; // frameX * sw
 let sy=0; // frameY * sh
