@@ -1,0 +1,140 @@
+:root{
+  --border-color: rgba(100,100,100,.5) ;
+  --background-green: rgba(20,47,39,.7);/*rgba(150, 75, 0, .5);*/
+  --card-background:  rgba(12,17,34, .6); /*rgba(170, 140, 110,.9) ;*/
+  --card-background-hover: rgba(200,180,160,.6) ; 
+  --text-color: #9c9c9c;
+
+  --background-color: rgb(12,17,34);
+}
+.background-image{
+  /*min-height: 100vh;
+  min-width: 100vw;*/
+  background-color: var(--background-color);
+  
+  background-image: /*url('../Background layers/Background.png')*/
+                    url("../Background layers/Layer_0000_9.png"),
+                    url("../Background layers/Layer_0001_8.png"),
+                    url("../Background layers/Layer_0002_7.png"),
+                    url("../Background layers/Layer_0003_6.png"),
+                    url("../Background layers/Layer_0004_Lights.png"),
+                    url("../Background layers/Layer_0005_5.png"),
+                    url("../Background layers/Layer_0006_4.png"),
+                    url("../Background layers/Layer_0007_Lights.png"),
+                    url("../Background layers/Layer_0008_3.png"),
+                    url("../Background layers/Layer_0009_2.png"),
+                    url("../Background layers/Layer_0010_1.png"),
+                    url("../Background layers/Layer_0011_0.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: 0px -10vh;
+  opacity: 100%;
+}
+
+.character-selection-container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  
+}
+
+
+
+
+.char-grid{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  background-image: url("../content/pixel-border.png");
+  background-size: cover;
+  background-repeat: 600px 300px;
+}
+/*
+.char-selection{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  filter: drop-shadow(0 0 2rem black);
+}*/
+
+.card-base{
+  border: 5px solid var(--border-color);
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+.char-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sprite{
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+.sprite-card{
+  border: 5px solid var(--border-color);
+  background-color: var(--card-background);
+  height: 250px;
+}
+.stats-card{
+  padding: .5rem 1rem .5rem 1rem;
+}
+.stats-card h3{
+  padding: 0 0 .2rem 0;
+}
+/* Container for skill bars */
+.stats-bars-container {
+  width: 100%; 
+  background-color: var(--card-background);
+  border: solid var(--border-color) 2px;
+  border-radius: 5px;
+  margin: 0.2rem 0 .5rem 0;
+}
+
+.stat-bar {
+  text-align: right; 
+  
+  color: var(--text-color); 
+  background-color: var(--background-green);
+  padding: .25rem;
+}
+.stat-bar p{
+  font-size: .5rem;
+}
+
+
+/* effects */
+.choose-char-btn-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+}
+.choose-char-btn-container span{
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  padding: .8rem 2rem .8rem 2rem;
+  margin: .5rem;
+  
+  background-color:var(--card-background);
+  border-radius: 5px;
+  border: 5px solid var(--border-color);
+
+  transition: all .3s ease-out;
+}
+.choose-char-btn-container span:hover{
+  background-color: var(--card-background-hover);
+  transform: translate(0, -5%) scale(120%, 110%);
+}
+
+/* media query (width 1000 px)*/

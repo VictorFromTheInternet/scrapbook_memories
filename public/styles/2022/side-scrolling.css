@@ -1,0 +1,92 @@
+:root{
+  --border-color: rgba(150, 75, 0, .5);
+  --card-background: rgba(12,17,34,.7);/*rgba(170, 140, 110,.6) ;*/
+  --text-color: rgba(226, 223, 210,1);
+  --background-color: rgb(12,17,34);
+}
+.background-image{
+  /*min-height: 100vh;
+  min-width: 100vw;*/
+  background-color: var(--background-color);
+  
+  background-image: /*url('../Background layers/Background.png')*/
+                    url("../Background layers/Layer_0000_9.png"),
+                    url("../Background layers/Layer_0001_8.png"),
+                    url("../Background layers/Layer_0002_7.png"),
+                    url("../Background layers/Layer_0003_6.png"),
+                    url("../Background layers/Layer_0004_Lights.png"),
+                    url("../Background layers/Layer_0005_5.png"),
+                    url("../Background layers/Layer_0006_4.png"),
+                    url("../Background layers/Layer_0007_Lights.png"),
+                    url("../Background layers/Layer_0008_3.png"),
+                    url("../Background layers/Layer_0009_2.png"),
+                    url("../Background layers/Layer_0010_1.png"),
+                    url("../Background layers/Layer_0011_0.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: 0px -10vh;
+  opacity: 100%;
+}
+
+.character-selection-container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  
+}
+
+.char-selection-area{
+  display: grid;
+  gap: 1rem;
+  
+  grid-template-areas:  'e e title title e e' /* player name */
+                        'col1 col1 col1 col2 col2 col2' /* col 1 is avatar, col2 is stats */
+                        'col1 col1 col1 col2 col2 col2'
+                        'col1 col1 col1 col2 col2 col2'
+                        'col1 col1 col1 col2 col2 col2'
+                        'e  e toggle toggle e e'; /* next char < >, select/start */
+}
+
+.grid-two-col{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  /*min-height: 70vh;*/
+}
+.char-selection{
+  /*min-height: 100%;*/
+
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  filter: drop-shadow(0 0 2rem black);
+}
+
+.char-title{
+  border: 5px solid var(--border-color);
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+.sprite{
+  border: 5px solid var(--border-color);
+  background-color: var(--card-background);
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+}
+
+/* effects */
+#change-anim:hover{
+  background-color: rgba(230,230,230,.2);
+}
+
+
+/* media query (width 1000 px)*/
